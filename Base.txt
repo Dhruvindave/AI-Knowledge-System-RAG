@@ -1,0 +1,35 @@
+###################################################################################
+######################### AI Knowledge System #####################################
+###################################################################################
+
+Date: - 09/06/2026
+
+
+Project Name: - AI Knowledge System (RAG)
+
+Definition: - A user uploads documents and asks questions. The system answers using the uploaded documents instead of general LLM knowledge.
+
+Created By: - Dhruvin Dave
+
+
+
+
+### Fundamentals
+
+Q-1) Why does this project exist: - This project best fits to the modern world's AI/ML products then the chat wrappers. To accomplish this project the developer
+has to work on following things:
+
+Embedding, Chunking, LLM Integration, Polishing the response, Vectorized Database etc.
+This will help to showcase the work around LLM, AI, Searching & Context, Chunking, Evalution of Response.
+
+
+Q-2) Uses: - Users can be from the students from the school/clg to the working professionals. Who wanted to ask questions or get summarized information from the long boring PDF.
+
+Q-3) Inputs: - The user will upload the PDF. for Internship perspective only 1.
+
+Q-4) Output: - Output is based on the questions asked by the user. The user can demand summaries, analysis or any specific part of the PDF.
+
+Q-5) Pipeline: - 
+User uploads the PDF -> PDF extracted -> Converted into the chunks -> Stored into Database.
+
+User ask the question:- Context of the AI automatically setted -> Information Retrieval -> LLM model generate the response.

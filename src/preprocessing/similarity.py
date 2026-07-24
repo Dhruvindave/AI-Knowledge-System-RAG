@@ -1,12 +1,14 @@
 
-import rapidfuzz as fuzz
+from rapidfuzz import fuzz
+from src.common.common_functions import get_page_lines
+import pandas as pd
 
 # =========================
 # 4. Compute Line Similarity
 # =========================
 
 
-def compute_line_similarity(pdf, candidate_lines=3):
+def compute_line_similarity(pdf, candidate_lines=3, similarity_fn= fuzz.ratio):
     """
     Compare the first and last `n_lines` of consecutive PDF pages.
 
@@ -64,7 +66,7 @@ def compute_line_similarity(pdf, candidate_lines=3):
                 "text2": text2,
                 "region": "header",
                 "line": line_number,
-                "score": fuzz.ratio(text1, text2)
+                "score": similarity_fn(text1, text2)
             })
 
         # Compare footer lines
@@ -80,7 +82,7 @@ def compute_line_similarity(pdf, candidate_lines=3):
                 "text2": text2,
                 "region": "footer",
                 "line": line_number,
-                "score": fuzz.ratio(text1, text2)
+                "score": similarity_fn(text1, text2)
             })
 
     return pd.DataFrame(similarity_records)

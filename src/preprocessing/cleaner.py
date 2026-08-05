@@ -18,7 +18,8 @@ def _normalize_text(text: str) -> str:
     text = re.sub(r"[ \t]+", " ", text)
 
     # Step 5: Replace multiple blank lines with at most two
-    text = re.sub(r"\n{3,}", "\n\n", text)
+    # text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"\n\s*\n+", "\n\n", text)
 
     return text
 
@@ -32,15 +33,15 @@ def normalize_pdf(pdf: list[str]) -> list[str]:
         normalized_pdf.append(normalized_page)
 
     # Comparing The cleaned PDF vs Original PDF
-    for i in range(0, 5):
-        print("---------------------------------------")
-        print("------------- Original PDF ------------")
-        print(pdf[i])
-        print("---------------------------------------\n")
+    # for i in range(0, 5):
+    #     print("---------------------------------------")
+    #     print("------------- Original PDF ------------")
+    #     print(pdf[i])
+    #     print("---------------------------------------\n")
 
-        print("---------------------------------------")
-        print("------------- Cleaned PDF ------------")
-        print(normalized_pdf[i])
-        print("---------------------------------------\n")
+    #     print("---------------------------------------")
+    #     print("------------- Cleaned PDF ------------")
+    #     print(normalized_pdf[i])
+    #     print("---------------------------------------\n")
 
     return normalized_pdf

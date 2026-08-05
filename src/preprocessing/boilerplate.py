@@ -98,12 +98,6 @@ def identify_boilerplate(
     return statistics
 
 
-
-
-
-
-
-
 # def remove_boilerplate(pdf, boilerplate_config):
 #     cleaned_pdf = []
 
@@ -157,10 +151,61 @@ def identify_boilerplate(
 # 9. Remove Boilerplate
 # =========================
 
+# def remove_boilerplate(
+#     pdf,
+#     boilerplate_config
+# ):
+
+#     cleaned_pdf = []
+
+    # boilerplate_positions = {
+    #     (row["region"], row["line"])
+    #     for _, row in boilerplate_config.iterrows()
+    # }
+
+#     for page in pdf:
+
+#         page_lines = get_page_lines(page)
+
+#         lines_to_remove = set()
+
+#         for region, line_number in boilerplate_positions:
+
+#             if region == "header":
+
+#                 index = line_number - 1
+
+#             elif region == "footer":
+
+#                 index = len(page_lines) - line_number
+
+#             else:
+
+#                 continue
+
+#             if 0 <= index < len(page_lines):
+
+#                 lines_to_remove.add(index)
+
+#         cleaned_page = "\n".join(
+#             line
+#             for index, line in enumerate(page_lines)
+#             if index not in lines_to_remove
+#         )
+
+#         cleaned_pdf.append(cleaned_page)
+
+#     return cleaned_pdf
+
+
 def remove_boilerplate(
     pdf,
     boilerplate_config
 ):
+    """
+    Remove detected boilerplate while preserving the original
+    paragraph and blank-line structure of each page.
+    """
 
     cleaned_pdf = []
 
@@ -171,33 +216,47 @@ def remove_boilerplate(
 
     for page in pdf:
 
-        page_lines = get_page_lines(page)
+        # Preserve original formatting
+        original_lines = page.splitlines()
 
-        lines_to_remove = set()
+        # Mapping:
+        # visible line number -> original line index
+        visible_to_original = []
+
+        for original_index, line in enumerate(original_lines):
+
+            if line.strip():
+                visible_to_original.append(original_index)
+
+        original_indices_to_remove = set()
 
         for region, line_number in boilerplate_positions:
 
             if region == "header":
 
-                index = line_number - 1
+                visible_index = line_number - 1
 
             elif region == "footer":
 
-                index = len(page_lines) - line_number
+                visible_index = len(visible_to_original) - line_number
 
             else:
 
                 continue
 
-            if 0 <= index < len(page_lines):
+            if 0 <= visible_index < len(visible_to_original):
 
-                lines_to_remove.add(index)
+                original_indices_to_remove.add(
+                    visible_to_original[visible_index]
+                )
 
-        cleaned_page = "\n".join(
+        cleaned_lines = [
             line
-            for index, line in enumerate(page_lines)
-            if index not in lines_to_remove
-        )
+            for index, line in enumerate(original_lines)
+            if index not in original_indices_to_remove
+        ]
+
+        cleaned_page = "\n".join(cleaned_lines)
 
         cleaned_pdf.append(cleaned_page)
 

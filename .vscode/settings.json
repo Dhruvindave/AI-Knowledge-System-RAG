@@ -3,8 +3,11 @@
         "chunker",
         "embedder",
         "Faiss",
+        "fitz",
         "Fullwidth",
         "genai",
-        "ntotal"
+        "ntotal",
+        "pbar",
+        "pdfs"
     ]
 }

@@ -12,41 +12,67 @@ class LLMResponseGenerator:
 
         self.client = genai.Client(api_key=API_KEY)
 
-    def prompt_builder(self, context, query):
+    # def prompt_builder(self, context, query):
+    #     """
+    #     Creating the prompt for the Query
+
+    #     Parameters
+    #     ------------
+    #     context: list[str]
+    #         List containing retrieved text
+
+    #     query: str
+    #         User asked query
+
+
+    #     Returns
+    #     ----------
+    #     prompt: str
+    #         Well structured context-enabled prompt
+    #     """
+
+    #     prompt = f"""
+    #     You are an AI assistant.
+
+    #     Answer ONLY using the provided context.
+
+    #     If the answer is not available,
+    #     say "I don't know."
+
+    #     Context:
+    #     {context}
+
+    #     Query:
+    #     {query}
+    #     """
+
+    #     return prompt
+
+    def build_context(self, retrieved_chunks):
         """
-        Creating the prompt for the Query
-
-        Parameters
-        ------------
-        context: list[str]
-            List containing retrieved text
-
-        query: str
-            User asked query
-
-
-        Returns
-        ----------
-        prompt: str
-            Well structured context-enabled prompt
+        retrieved_chunks: list of dicts from store.search(), e.g.
+            {"title": ..., "breadcrumb": ..., "content": ..., "distance": ...}
         """
+        blocks = []
 
-        prompt = f"""
-        You are an AI assistant.
+        for i, chunk in enumerate(retrieved_chunks, start=1):
+            blocks.append(
+                f"[Source {i}] {chunk['breadcrumb']}\n{chunk['content']}"
+            )
 
-        Answer ONLY using the provided context.
+        return "\n\n---\n\n".join(blocks)
 
-        If the answer is not available,
-        say "I don't know."
+    def build_prompt(self, user_question, context):
+        return f"""You are answering a question using only the context provided below.
+If the answer isn't contained in the context, say so clearly instead of guessing.
+When relevant, mention which source(s) your answer is based on.
 
-        Context:
-        {context}
+Context:
+{context}
 
-        Query:
-        {query}
-        """
+Question: {user_question}
 
-        return prompt
+Answer:"""
 
     def generate_response(self, prompt, model="gemini-2.5-flash"):
         response = self.client.models.generate_content(
@@ -54,3 +80,4 @@ class LLMResponseGenerator:
             contents=prompt
         )
         return response
+

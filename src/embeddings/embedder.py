@@ -1,17 +1,19 @@
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+
+_MODEL = None
+
+
+def _embedding_model():
+    global _MODEL
+    if _MODEL is None:
+        _MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+    return _MODEL
+
+
+def encode_texts(texts):
+    """Encode a batch of strings; loads the embedding model once."""
+    return _embedding_model().encode(texts)
 
 
 def chunk_encoder(chunks):
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-
-    embeddings = model.encode(chunks)
-
-    print(f"Each embedding has {embeddings.shape[1]} dimensions")
-
-    similarities = cosine_similarity(embeddings)
-    print("Similarity matrix:")
-    print(similarities)
-
-    return embeddings
-# You'll see sentences 1, 2, and 4 are more similar to each other
+    return encode_texts(chunks)

@@ -40,7 +40,8 @@
 
 import faiss
 import numpy as np
-
+from pathlib import Path
+import pickle
 
 class FaissVectorStore:
     """
@@ -78,7 +79,12 @@ class FaissVectorStore:
         self.index.add(embeddings)
 
         for meta in metadata_list:
+            meta = meta.copy()
+
+            meta["chunk_id"] = str(self._next_id)
+
             self.metadata_store[self._next_id] = meta
+
             self._next_id += 1
 
     def search(self, query_embedding, k=3):
@@ -103,3 +109,39 @@ class FaissVectorStore:
 
     def total_vectors(self):
         return self.index.ntotal
+
+    def save(self, path):
+        path = Path(path)
+        path.mkdir(parents=True, exist_ok=True)
+
+        faiss.write_index(
+            self.index,
+            str(path / "faiss.index")
+        )
+
+        with open(path / "metadata.pkl", "wb") as f:
+            pickle.dump(self.metadata_store, f)
+
+    @classmethod
+    def load(cls, path):
+
+        path = Path(path)
+
+        index = faiss.read_index(
+            str(path / "faiss.index")
+        )
+
+        with open(
+            path / "metadata.pkl",
+            "rb"
+        ) as f:
+
+            metadata_store = pickle.load(f)
+
+        store = cls(index.d)
+
+        store.index = index
+        store.metadata_store = metadata_store
+        store._next_id = index.ntotal
+
+        return store

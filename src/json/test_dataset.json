@@ -1,0 +1,863 @@
+[
+  {
+    "id": 1,
+    "chapter": "CH1",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Which exchange is described as the first known organized futures market, and in what year was it set up?",
+    "chunk_id": "35"
+  },
+  {
+    "id": 2,
+    "chapter": "CH1",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "In which years did the Chicago Board of Trade and the London Metal Exchange respectively begin operations?",
+    "chunk_id": "37"
+  },
+  {
+    "id": 3,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Which association started organized commodity derivatives trading in India in 1875, and what was the underlying commodity?",
+    "chunk_id": "38"
+  },
+  {
+    "id": 4,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "From what date did regulatory responsibility for commodity derivatives shift from the repealed 1952 forward contracts law to SEBI under the SCRA?",
+    "chunk_id": "41",
+    "additional_chunk_ids": [
+      "42"
+    ]
+  },
+  {
+    "id": 5,
+    "chapter": "CH1",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "A trader wants to know whether guar seed and rubber would be classified as 'soft' or 'hard' commodities, and why the distinction is made this way — what's the underlying classification rule?",
+    "chunk_id": "44"
+  },
+  {
+    "id": 6,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "Which of the two derivative instruments — forward or futures — is described as one where the contract can be cancelled only with mutual consent because it is a bipartite agreement?",
+    "chunk_id": "59",
+    "additional_chunk_ids": [
+      "60"
+    ]
+  },
+  {
+    "id": 7,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "In a fixed-for-floating commodity swap, which party is described as having an indirect long exposure, and which has an indirect short exposure, on the underlying commodity price?",
+    "chunk_id": "66",
+    "additional_chunk_ids": [
+      "67"
+    ]
+  },
+  {
+    "id": 8,
+    "chapter": "CH1",
+    "difficulty": "easy",
+    "type": "factual",
+    "question": "Name the four national exchanges in India where commodity derivatives are currently traded.",
+    "chunk_id": "68"
+  },
+  {
+    "id": 9,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Monthly Electricity Futures contracts cover how many days of round-the-clock delivery, and how far in advance can they be traded?",
+    "chunk_id": "70"
+  },
+  {
+    "id": 10,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "List all four channels through which high interest rates are said to reduce the real market price of storable commodities.",
+    "chunk_id": "105",
+    "additional_chunk_ids": [
+      "106"
+    ]
+  },
+  {
+    "id": 11,
+    "chapter": "CH1",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What real-world event in April 2020 caused WTI Oil Futures on Nymex to turn negative, according to the workbook?",
+    "chunk_id": "108"
+  },
+  {
+    "id": 12,
+    "chapter": "CH1",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "Put in chronological order: the start of commodity options trading, the launch of options that expire into direct physical delivery, and the start of index futures trading in India.",
+    "chunk_id": "109"
+  },
+  {
+    "id": 13,
+    "chapter": "CH2",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "What distinguishes a Total Return Index from an Excess Return Index in the way each measures investment performance?",
+    "chunk_id": "123",
+    "additional_chunk_ids": [
+      "124"
+    ]
+  },
+  {
+    "id": 14,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "Why are commodity futures prices-based indices in India classified as total return indices rather than plain price indices?",
+    "chunk_id": "125",
+    "additional_chunk_ids": [
+      "126"
+    ]
+  },
+  {
+    "id": 15,
+    "chapter": "CH2",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "The S&P GSCI was originally developed under a different name in 1991 — what was that name, and in what year did Standard & Poor's take over its ownership?",
+    "chunk_id": "128"
+  },
+  {
+    "id": 16,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Over what look-back period are the production value and trade liquidity figures averaged when deriving the weights of metals in the LME Index?",
+    "chunk_id": "129"
+  },
+  {
+    "id": 17,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "If a commodity's futures don't meet the minimum Average Daily Trading Volume threshold for a composite index, what is the cap placed on its individual weight in that index?",
+    "chunk_id": "134"
+  },
+  {
+    "id": 18,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What is the required minimum weighting ratio between the production score and the liquidity score used to decide a commodity's weight in an index?",
+    "chunk_id": "138"
+  },
+  {
+    "id": 19,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For NCDEX GUAREX in 2022-23, what were the individual weights assigned to Guar Seeds and Guar Gum?",
+    "chunk_id": "145"
+  },
+  {
+    "id": 20,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "As of January 2025, what were the respective weights of Gold and Silver in the MCX iCOMDEX BULLION INDEX?",
+    "chunk_id": "146"
+  },
+  {
+    "id": 21,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "What is the minimum lot value in rupees that must be maintained for a commodity Index Futures contract, and what index base value do these contracts typically start from?",
+    "chunk_id": "148"
+  },
+  {
+    "id": 22,
+    "chapter": "CH2",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Compare the client-level and member-level open position limits for commodity Index Options versus Index Futures — by what factor are the Index Options limits higher?",
+    "chunk_id": "170",
+    "additional_chunk_ids": [
+      "151"
+    ]
+  },
+  {
+    "id": 23,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "10 grams of gold trades at Rs 1,20,000 in the spot market and the cost-of-carry is 12% per annum. What is the fair value of a 4-month futures contract using the simple cost-of-carry model?",
+    "chunk_id": "186"
+  },
+  {
+    "id": 24,
+    "chapter": "CH3",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "If futures prices are expected to fall below the current spot price because the market anticipates lower prices ahead, what is this kind of market called?",
+    "chunk_id": "189"
+  },
+  {
+    "id": 25,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Gold's 10-gram spot price is Rs 50,000 and financing costs 12% per annum compounded monthly. What is the fair value of a 4-month futures contract?",
+    "chunk_id": "194"
+  },
+  {
+    "id": 26,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Using continuous compounding at 12% per annum on a Rs 50,000 gold spot price, what is the fair value of a 4-month futures contract?",
+    "chunk_id": "195"
+  },
+  {
+    "id": 27,
+    "chapter": "CH3",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "What term describes the rupee benefit a processor gets from holding physical inventory of a commodity rather than holding a futures contract on it?",
+    "chunk_id": "196"
+  },
+  {
+    "id": 28,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In the guar seed convenience yield illustration, what were the estimated storage costs/risks and the estimated convenience yield over the six-month holding period, per quintal?",
+    "chunk_id": "200",
+    "additional_chunk_ids": [
+      "202"
+    ]
+  },
+  {
+    "id": 29,
+    "chapter": "CH3",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What is the modified futures pricing formula once convenience yield is factored in alongside spot price and cost of carry?",
+    "chunk_id": "202"
+  },
+  {
+    "id": 30,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "On the NCDEX platform, at approximately what two times of day are spot polling prices for each commodity disclosed to participants?",
+    "chunk_id": "219"
+  },
+  {
+    "id": 31,
+    "chapter": "CH3",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "How is the Final Settlement Price of a futures or options-on-goods contract expiring on day 'E' typically derived from polled spot prices?",
+    "chunk_id": "222"
+  },
+  {
+    "id": 32,
+    "chapter": "CH3",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A commodity's spot price is Rs 28,000, the holding period is 90 days, the interest rate is 7% and storage cost is 2%. According to the sample question in the workbook, what is the total cost of carry?",
+    "chunk_id": "227"
+  },
+  {
+    "id": 33,
+    "chapter": "CH4",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "What's the key difference between when an American-style and a European-style commodity option can be exercised?",
+    "chunk_id": "232",
+    "additional_chunk_ids": [
+      "233"
+    ]
+  },
+  {
+    "id": 34,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "definition-distinction",
+    "question": "Is the 'close to the money' (CTM) option concept applicable to Options on Futures, Options on Goods, or both?",
+    "chunk_id": "237"
+  },
+  {
+    "id": 35,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "In the option risk/reward summary table, which position has BOTH its maximum risk and maximum reward expressed as 'strike price less premium'?",
+    "chunk_id": "252"
+  },
+  {
+    "id": 36,
+    "chapter": "CH4",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Who published the Black-Scholes option pricing model, and in what year?",
+    "chunk_id": "269"
+  },
+  {
+    "id": 37,
+    "chapter": "CH4",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What is the name of the Black-Scholes variant used specifically to price Options on Futures, where the underlying is a futures contract rather than a spot good?",
+    "chunk_id": "270"
+  },
+  {
+    "id": 38,
+    "chapter": "CH4",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "According to the workbook, who developed the Binomial option pricing model and in what year?",
+    "chunk_id": "268"
+  },
+  {
+    "id": 39,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A Silver ATM call option's premium moves from Rs 3,500 to Rs 6,100 when the futures price rises from Rs 60,000 to Rs 63,000. What is the resulting Delta?",
+    "chunk_id": "275"
+  },
+  {
+    "id": 40,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Given that Delta changes from 0.867 to 0.900 as the underlying futures price rises from Rs 60,000 to Rs 63,000, what is the corresponding Gamma value calculated in the workbook?",
+    "chunk_id": "277"
+  },
+  {
+    "id": 41,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A two-month ATM option priced at Rs 3,500 is worth Rs 3,450 a month later with one month left to expiry, all else equal. What Theta (in % per month and % per annum) does the workbook derive from this?",
+    "chunk_id": "278"
+  },
+  {
+    "id": 42,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "If a Silver option premium rises from Rs 3,500 to Rs 4,000 when volatility increases from 10% to 12%, what is the Vega per 1% change in volatility?",
+    "chunk_id": "279"
+  },
+  {
+    "id": 43,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "An option premium falls from Rs 3,500 to Rs 3,200 when the risk-free rate drops from 12% p.a. to 9% p.a. What Rho value (per 1% change in interest rate) does this imply?",
+    "chunk_id": "280"
+  },
+  {
+    "id": 44,
+    "chapter": "CH4",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A call option has a strike price of Rs 1,170, the underlying futures is at Rs 1,280, and the premium is Rs 200. What are the intrinsic value and time value components of that premium?",
+    "chunk_id": "282"
+  },
+  {
+    "id": 45,
+    "chapter": "CH5",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What is the formula for calculating the Hedge Ratio used to determine how many futures lots a hedger should trade?",
+    "chunk_id": "360"
+  },
+  {
+    "id": 46,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What Minimum Support Prices for Maize and Wheat (per quintal) does the workbook use in its example of MSP acting like a put option strike price for farmers, and what was the previous year's Maize MSP?",
+    "chunk_id": "355"
+  },
+  {
+    "id": 47,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In the long hedge illustration where a jeweler buys August gold futures at Rs 50,400 and later sells at Rs 52,000, what profit does he make in the futures market?",
+    "chunk_id": "358"
+  },
+  {
+    "id": 48,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In the short hedge example for guar seeds, the producer sells August futures at Rs 4,050 and buys them back at Rs 4,000 per quintal — what is the resulting futures market profit?",
+    "chunk_id": "359"
+  },
+  {
+    "id": 49,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In Mr. X's cash-and-carry silver arbitrage example, after repaying the borrowed principal and interest, what was his net arbitrage profit?",
+    "chunk_id": "375",
+    "additional_chunk_ids": [
+      "376"
+    ]
+  },
+  {
+    "id": 50,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In Mr. Y's reverse cash-and-carry silver arbitrage example, what was his final arbitrage profit after accounting for interest earned and the cost of replacing the physical silver?",
+    "chunk_id": "378"
+  },
+  {
+    "id": 51,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In the gold 'buying a spread' example, Mr. X buys June futures at Rs 50,700 and sells August futures at Rs 50,800, then later squares off at Rs 50,900 and Rs 50,950 respectively. What is his net gain?",
+    "chunk_id": "381",
+    "additional_chunk_ids": [
+      "382"
+    ]
+  },
+  {
+    "id": 52,
+    "chapter": "CH5",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "Between a long hedger and a short hedger, which one benefits when the basis weakens (futures price rising relative to spot)?",
+    "chunk_id": "400"
+  },
+  {
+    "id": 53,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A trader holding 500 kg of nickel spot writes a call at strike Rs 1,025 for a premium of Rs 12. If nickel falls to Rs 990, what does the option seller keep, and why doesn't the buyer exercise?",
+    "chunk_id": "406",
+    "additional_chunk_ids": [
+      "407"
+    ]
+  },
+  {
+    "id": 54,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "An investor sells a Rs 50,500 gold put for a premium of Rs 600 (spot at Rs 50,000). If gold falls to Rs 49,900 at expiry, what is the investor's net loss on this covered short put position?",
+    "chunk_id": "408",
+    "additional_chunk_ids": [
+      "409"
+    ]
+  },
+  {
+    "id": 55,
+    "chapter": "CH5",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "In the Bull Call Spread example on gold, an investor buys the 50550 call and sells the 50600 call. What is the net premium paid, and what is the maximum loss if the price rises beyond Rs 50,600?",
+    "chunk_id": "412",
+    "additional_chunk_ids": [
+      "413"
+    ]
+  },
+  {
+    "id": 56,
+    "chapter": "CH5",
+    "difficulty": "medium",
+    "type": "negation",
+    "question": "Between a long straddle and a short straddle, which one has unlimited maximum risk rather than risk limited to the premium?",
+    "chunk_id": "418"
+  },
+  {
+    "id": 57,
+    "chapter": "CH6",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "What's the key functional difference between a Trading Member (TM) and a Professional Clearing Member (PCM) on a commodity exchange?",
+    "chunk_id": "437",
+    "additional_chunk_ids": [
+      "439"
+    ]
+  },
+  {
+    "id": 58,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Following SEBI's June 21, 2018 board decision, by what date were sub-brokers required to have migrated into Authorized Persons or Trading Members?",
+    "chunk_id": "440"
+  },
+  {
+    "id": 59,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "As per the SEBI circular dated 17 March 2022, what is the maximum number of orders per second permitted for algorithmic trading, and over what rolling period is it measured?",
+    "chunk_id": "450"
+  },
+  {
+    "id": 60,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What are the trading hours (days and time in IST) prescribed for domestic agricultural commodities versus non-agricultural commodities?",
+    "chunk_id": "456"
+  },
+  {
+    "id": 61,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A trader buys June gold futures at Rs 50,000 and places a Trailing Stop Loss of Rs 1,000 (i.e., initially at Rs 49,000). If the price later rises to Rs 53,000, where does the Trailing Stop Loss level move to?",
+    "chunk_id": "494",
+    "additional_chunk_ids": [
+      "495"
+    ]
+  },
+  {
+    "id": 62,
+    "chapter": "CH6",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "What's the difference between a Good-Till-Date (GTD) order and a Good-Till-Cancelled (GTC) order?",
+    "chunk_id": "496",
+    "additional_chunk_ids": [
+      "497"
+    ]
+  },
+  {
+    "id": 63,
+    "chapter": "CH6",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "How does an Immediate or Cancel (IOC) order behave if only part of it can be executed right away?",
+    "chunk_id": "497"
+  },
+  {
+    "id": 64,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "For a category of algo trading, orders per second above what threshold triggers mandatory registration with the broker, as opposed to being treated as a generic low-frequency algo?",
+    "chunk_id": "453"
+  },
+  {
+    "id": 65,
+    "chapter": "CH6",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "On what basis does the order matching system on a commodity exchange's screen-based trading platform rank incoming buy and sell orders?",
+    "chunk_id": "443"
+  },
+  {
+    "id": 66,
+    "chapter": "CH6",
+    "difficulty": "hard",
+    "type": "definition-distinction",
+    "question": "A trader placed a stop-loss sell order at Rs 250. Does it get triggered only when the best buyer is exactly at Rs 250, or can it also trigger below that level?",
+    "chunk_id": "492"
+  },
+  {
+    "id": 67,
+    "chapter": "CH7",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What legal process/principle does the Clearing Corporation rely on to guarantee settlement of trades executed on the exchange?",
+    "chunk_id": "526"
+  },
+  {
+    "id": 68,
+    "chapter": "CH7",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What are the three settlement options currently available in the commodity futures market for an open position at expiry?",
+    "chunk_id": "539"
+  },
+  {
+    "id": 69,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "Under the 'both options to deliver' settlement mechanism, what happens if even one side of a matched trade does not opt for delivery, and at what rate does the resulting settlement occur?",
+    "chunk_id": "545"
+  },
+  {
+    "id": 70,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "What are the two broad components that make up Counterparty Risk in commodity derivatives, as distinguished in the risk management chapter?",
+    "chunk_id": "580"
+  },
+  {
+    "id": 71,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "Of the six risk categories discussed for exchange-traded commodity derivatives (counterparty, principal, market integrity, operational, legal, systemic), which one specifically concerns the danger of one party's default triggering defaults among other unrelated parties?",
+    "chunk_id": "585"
+  },
+  {
+    "id": 72,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "At the client level, if a trader's buy position is 1,500 lots and sell position is 2,000 lots in the same commodity, what is the open position considered for position-limit purposes?",
+    "chunk_id": "587"
+  },
+  {
+    "id": 73,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What percentage of gross open positions is levied as Extreme Loss Margin (ELM), and how is it deducted from the clearing member?",
+    "chunk_id": "607",
+    "additional_chunk_ids": [
+      "608"
+    ]
+  },
+  {
+    "id": 74,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "If mark-to-market obligations are not collected before the start of the next day's trading, by what mathematical factor does the exchange scale up the initial margin to compensate?",
+    "chunk_id": "614"
+  },
+  {
+    "id": 75,
+    "chapter": "CH7",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "What statistical methodology is used by exchanges to determine the Initial Margin on a commodity futures position?",
+    "chunk_id": "607"
+  },
+  {
+    "id": 76,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "How many price-movement scenarios does the SPAN methodology calculate when working out the initial margin for option positions?",
+    "chunk_id": "609"
+  },
+  {
+    "id": 77,
+    "chapter": "CH7",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "Under the peak exposure margin regime introduced by SEBI, how many intraday trade snapshots do exchanges take to calculate peak margins?",
+    "chunk_id": "610"
+  },
+  {
+    "id": 78,
+    "chapter": "CH7",
+    "difficulty": "hard",
+    "type": "multi-hop",
+    "question": "In the compulsory delivery process for a physically settled contract, which clearing member transfers the warehouse receipt to the clearing corporation, and which step finally credits funds to the seller's account?",
+    "chunk_id": "540",
+    "additional_chunk_ids": [
+      "541",
+      "542"
+    ]
+  },
+  {
+    "id": 79,
+    "chapter": "CH8",
+    "difficulty": "easy",
+    "type": "factual",
+    "question": "What are the three tiers of India's commodity market regulatory framework?",
+    "chunk_id": "658"
+  },
+  {
+    "id": 80,
+    "chapter": "CH8",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "With effect from what exact date was regulation of the commodity derivatives market shifted to SEBI following the repeal of the Forward Contracts (Regulation) Act, 1952?",
+    "chunk_id": "660"
+  },
+  {
+    "id": 81,
+    "chapter": "CH8",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Which SEBI regulatory amendment permitted trading of commodity derivatives alongside other securities market segments on a single exchange, and from what date did it take effect?",
+    "chunk_id": "664"
+  },
+  {
+    "id": 82,
+    "chapter": "CH8",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "In December 2021, which new instrument was added to the definition of 'Securities' under the SCRA, prompting the notification of the SEBI (Vault Managers) Regulations, 2021?",
+    "chunk_id": "670"
+  },
+  {
+    "id": 83,
+    "chapter": "CH8",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "Under the SCRA's definition of 'Securities', which of the following is explicitly excluded: Electronic Gold Receipts, deposit receipts under SARFAESI, Commodity Derivatives, or Monsoon Derivatives?",
+    "chunk_id": "676"
+  },
+  {
+    "id": 84,
+    "chapter": "CH8",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Which act gives SEBI the power to grant recognition to stock exchanges in India?",
+    "chunk_id": "665"
+  },
+  {
+    "id": 85,
+    "chapter": "CH9",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "From an accounting standpoint, what are the three types of hedges recognized under hedge accounting principles?",
+    "chunk_id": "679"
+  },
+  {
+    "id": 86,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For retrospective hedge effectiveness testing, within what percentage range must the actual results of a hedge fall to be considered 'highly effective'?",
+    "chunk_id": "687"
+  },
+  {
+    "id": 87,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What CTT rate applies to the sale of a commodity futures contract, and who is liable to pay it — buyer or seller?",
+    "chunk_id": "707"
+  },
+  {
+    "id": 88,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What CTT rate applies when an option is exercised and settled by means other than physical delivery, and on whom is it charged?",
+    "chunk_id": "707"
+  },
+  {
+    "id": 89,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "A trader closes out a Gold futures position by selling at Rs 49,80,000 per kg. Using the applicable CTT rate, what CTT amount does the workbook calculate the trader (as seller) must pay?",
+    "chunk_id": "709"
+  },
+  {
+    "id": 90,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What is the uniform stamp duty rate (in rupees per lakh of transaction) that exchanges have levied on brokers since 1 July 2020?",
+    "chunk_id": "710",
+    "additional_chunk_ids": [
+      "711"
+    ]
+  },
+  {
+    "id": 91,
+    "chapter": "CH9",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "What is the standard SEBI Turnover Fee rate per crore of turnover, and to what reduced rate is it lowered specifically for agricultural commodities?",
+    "chunk_id": "711"
+  },
+  {
+    "id": 92,
+    "chapter": "CH9",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "Under GST rules for commodity derivatives, what taxes does GST subsume, and which two charges does it specifically NOT subsume?",
+    "chunk_id": "714"
+  },
+  {
+    "id": 93,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Since when has responsibility for e-KYC Aadhaar authentication required members to register as a Sub-KUA of a KYC User Agency, per the relevant SEBI circular?",
+    "chunk_id": "730"
+  },
+  {
+    "id": 94,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "definition-distinction",
+    "question": "Into what three risk categories are clients classified for enhanced due diligence purposes based on KYC documentation?",
+    "chunk_id": "733"
+  },
+  {
+    "id": 95,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Through which online grievance redressal mechanism can an investor lodge and track a complaint against a broker even without seeking monetary compensation?",
+    "chunk_id": "774"
+  },
+  {
+    "id": 96,
+    "chapter": "CH10",
+    "difficulty": "hard",
+    "type": "negation",
+    "question": "Is it a member's right or a member's obligation to decline squaring off an existing client position on the last day of a contract unless the client expressly asks for it to be squared off?",
+    "chunk_id": "772"
+  },
+  {
+    "id": 97,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "negation",
+    "question": "According to the DOs and DON'Ts for investors, what type of unauthorized/illegal trading practice in unorganized markets are investors explicitly told never to get involved in?",
+    "chunk_id": "777"
+  },
+  {
+    "id": 98,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "factual",
+    "question": "Under what condition are brokers permitted to issue an Electronic Contract Note (ECN) to a client instead of a physical one?",
+    "chunk_id": "778"
+  },
+  {
+    "id": 99,
+    "chapter": "CH10",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Chapter VIII of which SEBI regulation prescribes the code of conduct discussed for securities brokers?",
+    "chunk_id": "718"
+  },
+  {
+    "id": 100,
+    "chapter": "CH10",
+    "difficulty": "medium",
+    "type": "negation",
+    "question": "Which of the four options is NOT directly related to KYC and anti-money-laundering control procedures: Suspicious Transaction Reporting, in-person verification, Financial Intelligence Unit, or position limits violation?",
+    "chunk_id": "779"
+  }
+]

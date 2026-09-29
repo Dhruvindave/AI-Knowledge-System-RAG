@@ -1,0 +1,366 @@
+// Question: 1
+// Compare the client-level and member-level open position limits for commodity Index Options versus Index Futures — by what factor are the Index Options limits higher?
+// Miss Type: Partial Retrieval
+// Real Answer:
+{
+    "170": {
+        "title": "**2.6 Trading in Index Options**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 2: COMMODITY INDICES**",
+            "**2.6 Trading in Index Options**"
+        ],
+        "content": "6. Open position limits as fixed by SEBI in index option is double that of index futures in % as\nwell as lots. At client level, it is 10% of open interest subject to a minimum of 2,000 lots.\nAt member level, it is 30% of open interest subject to a minimum of 20,000 lots.\n7. Like in Index Futures, the Risk Management framework should confirm the CPMI–IOSCO\nPrinciples for Financial Market Infrastructures (PFMI). Initial margin shall be adequate to\ncover at least 99% VaR and Margin Period of Risk (MPOR) shall be at least two days.\n8. Clearing Corporation should impose various margins on open positions like Short-Option\nMinimum Margin (SOMM), Initial margin, Concentration margin, Additional Adhoc\nmargin, ELM, Pre-Expiry Margins, etc. Initial Margin will be applied at the level of portfolio\nof the individual client. As index options are cash-settled, there will not be any rolling\nperiod/delivery period margin. Buyers of index options will pay the option premiums,",
+        "chunk_id": "170"
+    },
+    "151": {
+        "title": "**2.4 Trading in Index Futures**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 2: COMMODITY INDICES**",
+            "**2.4 Trading in Index Futures**"
+        ],
+        "content": "market in the respective commodity index futures or 10,000 lots.\n6. Commodity Index futures are settled based on the Final Settlement Price. On the Expiry\nday of Index Futures, the Final Settlement Price (FSP) of the index is determined after 5:00\npm. It is based on index calculation on weighted average traded price of constituents’\nfuture contract during 4:00 pm to 5:00 pm. In case of no trade in any constituent, an\nappropriate method as in the close price calculation should be used to arrive at FSP. FSP\nso determined for Index Future position is used to settle the open positions. The\ndifference between previous day’s DSP of Index Futures and FSP will be used to do daily\ncash settlement on next day morning.\n7. Risk Management framework should confirm to the Principles of CPMI–IOSCO for financial\nmarket infrastructure. Margins will include Initial Margin (based on 99% confidence VaR\nwith holding period i.e., MPOR of at least 2 days). CPMI refers to Committee on Payments",
+        "chunk_id": "151"
+    },
+}
+// Retreived Answer:
+{
+    "150": {
+        "title": "**2.4 Trading in Index Futures**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 2: COMMODITY INDICES**",
+            "**2.4 Trading in Index Futures**"
+        ],
+        "content": "calculation on real time basis depends upon Commodity Futures prices. Therefore, the\nindex’s DPL calculation is also restricted by the commodity level future prices’ DPL.\nHowever, at Index level futures, demand and supply forces may move index futures\nadditionally and hence, Index Futures’ DPL is generally kept higher than DPLs of\nCommodity level futures.\n4. The maximum tenor of the Index Futures Contract shall not exceed 12 months. It means\ncontracts may be started on the launch date for 1 month, 2 months, 6 months and 12\nmonths etc.\n5. Open position limits in index futures shall be as per SEBI regulations. At client level, it is\n5% of open interest in the market for the respective commodity index futures or 1,000\nlots (higher of either). At the member level, it is the higher of 15% of open interest in the\nmarket in the respective commodity index futures or 10,000 lots.\n6. Commodity Index futures are settled based on the Final Settlement Price. On the Expiry",
+        "chunk_id": "150"
+    },
+    "467": {
+        "title": "**6.2 Trading System in the Exchanges**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 6: TRADING MECHANISM**",
+            "**6.2 Trading System in the Exchanges**"
+        ],
+        "content": "- Open Position Limit at the Broker level and Client level: Specified in the contract generally\nin line with SEBI norms. Member level limits are normally 10 times that of client level limit\nin numeric terms.\n\n- Instrument Type: A specific code that clearly distinguishes derivative instruments such as\nCommodity Futures, Options on Futures, Options on Goods, Index Options and Index\nFutures from each other.\n\n- Trading days and trading time: These are provided in advance and specified for most\nagricultural commodities and non-agricultural commodities based on SEBI norms.\n\n- Basis Centre and Additional delivery center: Provided as part of the contract specifications\nto enable a robust process for the discovery of commodity prices.",
+        "chunk_id": "467"
+    },
+    "586": {
+        "title": "**7.9 Position Limits and Computation of Open Position**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 7: CLEARING, SETTLEMENT AND RISK MANAGEMENT**",
+            "**7.9 Position Limits and Computation of Open Position**"
+        ],
+        "content": "Position Limits are set at the client level and member level to prevent any members and\nclients from building up large open positions on the buy side or sell side that would help them\nmanipulate short-term price movements to their advantage. Numerical position limits are set\nboth for agricultural and non-agricultural commodities as per the guidelines of the regulator.\nOpen position limits are set on an annual basis by the regulators in consultation with the\nexchanges operating relevant commodity derivative contracts taking into consideration the\ntotal available deliverable supplies.\n\n\n**Computation of Open Position**",
+        "chunk_id": "586"
+    },
+    "337": {
+        "title": "**4.6 Options on Goods**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 4: COMMODITY OPTIONS**",
+            "**4.6 Options on Goods**"
+        ],
+        "content": "Commodity Options vary from Equity options segment in various ways. Key differences\nbetween these two segments are given as below:\n\n\n\n\n\n\n\n|Commodity Options|Equity Options|\n|---|---|\n|_Options on Futures - if exercised Settled in futures_<br>_Contracts_|_Options on stocks - if exercised settle in_<br>_physical Delivery_|\n|_Options on Goods - if exercised Settles in physical_<br>_Delivery_|_Options on Index - if exercised settled in cash_|\n|_Monthly expiries_|_Daily, Weekly and Monthly expiries_|\n|_Last day of expiry 3 days prior to futures tender_<br>_Period_|_Settlement on last day of expiry_|\n|_Popular options: Individual scrips like Crude oil,_<br>_Gold, Natural Gas etc._|_Popular options: Index options like Nifty,_<br>_BankNifty, Sensex etc._|\n|_Market timings: 9 am to 11:30pm/11:55pm_|_Market timings: 9:15 am to 3:30 pm_|\n|_Volatility: High_|_Volatility: Moderate to High_|\n\n\n89",
+        "chunk_id": "337"
+    },
+    "147": {
+        "title": "**2.4 Trading in Index Futures**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 2: COMMODITY INDICES**",
+            "**2.4 Trading in Index Futures**"
+        ],
+        "content": "Indices are made up of values created through a series of price change in underlying\nsecurities/commodities or contracts. Value of these indices also change due to change in\nprices of the component futures contract of the basket. Anything which has uncertainty with\nits value changing may create opportunities of trading in derivatives like in Futures and\nOptions. Thus, a future with commodity index as the underlying can be created with\nappropriate trading and settlement structure. Trading and settlement structure of Index\nFutures are decided by the Exchanges and are in-built in the terms of contracts. Below are the\n\n\n5 _(Source: MCX Website – Commodity Index Constituents and their Weightages)_\n\n\n38",
+        "chunk_id": "147"
+    },
+}
+
+
+
+// Question: 2
+// What term describes the rupee benefit a processor gets from holding physical inventory of a commodity rather than holding a futures contract on it?
+// Miss Type: Ground Truth boundry problem
+// Real Answer:
+{
+    "196": {
+        "title": "**3.6 Convenience Yield**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 3: COMMODITY FUTURES**",
+            "**3.6 Convenience Yield**"
+        ],
+        "content": "Convenience yield indicates the benefit of owning a commodity rather than buying a futures\ncontract on that commodity. Convenience yield can be generated because of the benefit from\nownership of a physical asset. This is one of the differentiating features between financial and\ncommodity derivatives.\n\n\nFinancial derivatives on bonds and equities are used for investment and hedging purposes.\nHolding the underlying bond or stock does not add any additional value compared to holding\na futures contract on the same bond or stock. In contrast, commodities, especially agricultural\ncommodities, have a convenience return because they form part of a production process that\nrequire ready accessibility to commodities at all the times to continue to operate at\neconomical costs.",
+        "chunk_id": "196"
+    },
+}
+// Retreived Answer:
+{
+    "197": {
+        "title": "**3.6 Convenience Yield**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 3: COMMODITY FUTURES**",
+            "**3.6 Convenience Yield**"
+        ],
+        "content": "Processors of agricultural commodities might face losses, if they do not have enough\ninventory at all times for uninterrupted production. Therefore, a commodity’s convenience\nyield is the benefit in rupee term that a user realizes for carrying sufficient stock of physical\ngoods over and above his immediate needs. Due to continuous production process or\nuncertainties of supplies, convenience yield or comfort for holding spot inventory increases.\nThis applies to agricultural produce supply during the lean season as the supplies tend to\ntighten vis-à-vis demand. An oil refiner may enjoy a convenience yield on crude oil inventories\nand without it, production will be interrupted and the refiner will not be able to continue\noperating the refinery. This also includes a situation where a manufacturer is more\ncomfortable to buy in the spot, with a particular supplier only (due to other service-related\nreasons, or providing storage space till delivery as and when required), which may further",
+        "chunk_id": "197"
+    },
+    "62": {
+        "title": "**1.2 Spot and Derivatives Trading in Commodities**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 1: INTRODUCTION TO COMMODITY MARKETS**",
+            "**1.2 Spot and Derivatives Trading in Commodities**"
+        ],
+        "content": "Therefore, a commodity futures contract is a standardized contract to buy or sell commodities\nfor a particular price and for delivery on a certain date in the future. For instance, if a hotel\nowner wants to buy 10 tons of wheat today, he can buy the wheat in the spot market for\nimmediate use. If the hotel owner wants to buy 10 tons of wheat for future use, he can buy\nwheat futures contracts also if available on a commodity futures exchange. The futures\ncontracts provide for the delivery of a physical commodity at the originally contracted price\nat a specified future date, irrespective of the actual price prevailing on the actual date of\ndelivery.",
+        "chunk_id": "62"
+    },
+    "179": {
+        "title": "**3.1 Introduction to Futures**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 3: COMMODITY FUTURES**",
+            "**3.1 Introduction to Futures**"
+        ],
+        "content": "Commodity Futures contracts are highly uniform and are well-defined. These contracts\nexplicitly state the commodities (quantity and quality of the goods) that have to be delivered\nat a certain time and place (acceptable delivery date) in a certain manner (method for closing\nthe contract) and define their permissible price fluctuations (minimum and maximum daily\nprice changes). Therefore, a commodity futures contract is a standardized contract to buy or\nsell commodities for a particular price and for delivery on a certain date in the future. Futures\ncontracts provide for the delivery of a physical commodity at the originally contracted amount\non a specified future date, irrespective of the actual price that may be prevailing on the actual\ndate of delivery.",
+        "chunk_id": "179"
+    },
+    "125": {
+        "title": "**2.2 Commodity Index**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 2: COMMODITY INDICES**",
+            "**2.2 Commodity Index**"
+        ],
+        "content": "Commodity indices are different from equity indices as commodity indices in India are\nconstructed from the prices of the nearby futures contracts of the commodity constituents,\ninstead of the underlying spot prices of the commodities. Future prices are generally higher\nthan the spot prices due to carrying cost parity Commodity futures prices-based indices are\ntypically considered as **total return indices** . These indices track the performance of a basket\nof commodity futures contracts, including both the changes in the prices of those contracts\nand any income generated by rolling the futures contracts forward just prior to the expiry of\nthe existing nearby futures contract. The income generated in this case comes from the\ndifference between the prices of the expiring futures contracts and the prices of the new\ncontracts purchased to maintain exposure to the underlying commodities.",
+        "chunk_id": "125"
+    },
+    "375": {
+        "title": "**5.4 Arbitrage**",
+        "breadcrumb": [
+            "",
+            "**CHAPTER 5: USES OF COMMODITY DERIVATIVES**",
+            "**5.4 Arbitrage**"
+        ],
+        "content": "**Cash and Carry arbitrage**\nCash-and-carry arbitrage refers to buying of a physical commodity with borrowed funds and\nsimultaneously selling the futures contract. The physical commodity is delivered upon the\nexpiry of the contract. This opportunity arises when the futures price of the commodity is\nmore than the sum of the spot price and the cost of carry (till expiry).\n\n**Example:**\nMr. X is an arbitrager in the commodity market. In May, he resorts to cash and carry arbitrage\ntransaction in silver in the following manner:\n\n\nIn May, Mr. X buys 30 kg of silver at the spot price of Rs 50,000 per kg by borrowing Rs\n15,00,000 at the rate of 10 percent per annum for two months (at simple interest) and\n\n\n100",
+        "chunk_id": "375"
+    },
+}
+
+// Question: 3
+// Between a long straddle and a short straddle, which one has unlimited maximum risk rather than risk limited to the premium?
+// Miss Type: Near Topic Retrieval
+// Real Answer: 
+{
+ "418": {
+    "title": "**5.7 Option Trading Strategies**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 5: USES OF COMMODITY DERIVATIVES**",
+      "**5.7 Option Trading Strategies**"
+    ],
+    "content": "|Col1|Long Straddle|Short Straddle|Long Strangle|Short Strangle|\n|---|---|---|---|---|\n|Market View|An increase in<br>volatility|A <br>decrease<br>in<br>volatility|A large increase<br>in volatility|Large decrease in<br>volatility|\n|Methodology|Buy a call and put<br>with the same<br>strike price and<br>expiry date|Sell a call and put<br>with the same<br>strike price and<br>expiry date|Buy a call and a<br>put<br>with<br>the<br>same<br>expiry<br>dates but with<br>different<br>strike<br>prices|Sell a call and a<br>put<br>with<br>the<br>same<br>expiry<br>dates but with<br>different<br>strike<br>prices. To be<br>safer, the trader<br>may sell out of<br>money call and<br>put<br>to<br>reduce<br>chances of being<br>exercised|\n|Maximum Risk|Total Premiums<br>paid|Unlimited|Total<br>Premium<br>paid|Unlimited|\n|Maximum<br>Returns|Unlimited|Limited to the<br>sum<br>of<br>the<br>premiums<br>received|Unlimited|Total Premiums<br>received|\n\n\n112\n\n\n\n\n**Example: Straddle and Strangle**",
+    "chunk_id": "418"
+  },
+}
+
+// Retreived Answer:
+{
+    "416": {
+        "title": "**5.7 Option Trading Strategies**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 5: USES OF COMMODITY DERIVATIVES**",
+          "**5.7 Option Trading Strategies**"
+        ],
+        "content": "111\n\n\nbullish and put options if his market view is bearish by selling short term options and buying\nlong term options.\n\n\n**5.7.3 Straddle and Strangle**\nOne of the common strategies in option trading involves simultaneous purchase of calls/puts\nwith a view to profit from a change in the volatility of the underlying commodity. Investors\nwith Long options anticipate an increase in volatility and they are long on vega i.e., volatilities.\nSimilarly, one who is with short positions anticipates a decrease in volatility and are having\nshort positions in volatility / vega. Volatility refers to the range to which the price of a\ncommodity may increase or decrease. Straddles and Strangles are the two major strategies\nunder this category.\n\n\n**Long Straddle:** A long straddle is an option strategy where the trader buys a call and a put\nwith the same strike price and same expiry date by paying premium.",
+        "chunk_id": "416"
+      },
+      "417": {
+        "title": "**5.7 Option Trading Strategies**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 5: USES OF COMMODITY DERIVATIVES**",
+          "**5.7 Option Trading Strategies**"
+        ],
+        "content": "**Long Straddle:** A long straddle is an option strategy where the trader buys a call and a put\nwith the same strike price and same expiry date by paying premium.\n\n\n**Long Strangle:** A long strangle involves the purchase of a call and a put with the same expiry\ndate but with different strike prices.",
+        "chunk_id": "417"
+      },
+      "432": {
+        "title": "**Sample Questions**",
+        "breadcrumb": [
+          "",
+          "**Sample Questions**"
+        ],
+        "content": "**Ans: (a)**\n\n\n4. ________ is the risk that a commodity's futures price will move differently from that of its\nunderlying physical commodity.\n(a) Premium risk\n(b) Spread risk\n(c) Margin risk\n(d) Basis risk\n\n\n**Ans: (d)**\n\n\n5. A _________ is an option strategy where the trader buys a call and a put with the same\nstrike price and same expiry date.\n(a) Short straddle\n(b) Long straddle\n(c) Short strangle\n(d) Long strangle\n\n\n**Ans: (b)**\n\n\n117",
+        "chunk_id": "432"
+      },
+      "421": {
+        "title": "**5.7 Option Trading Strategies**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 5: USES OF COMMODITY DERIVATIVES**",
+          "**5.7 Option Trading Strategies**"
+        ],
+        "content": "Long Straddle: If the price rises to Rs 230, the investor exercises the call and abandon the put.\nHe makes a gain of Rs.40 (= 230 - 190) minus premium of Rs 25. His net profit is Rs 15. If the\nprice falls to Rs 150, the investor abandons the call and exercises the put. He makes a gain of\nRs 40 (= 190 - 150) minus premium of 25. His net profit is Rs 15.\n\n\nShort Straddle: The investor received a premium of Rs 25 initially. If the price rises to Rs 230,\nthe call would have been exercised and his net loss is Rs 40 - 25 = Rs 15. If the price falls to Rs\n150, the put would have been exercised and his net loss would be 40 - 25 = Rs 15.\n\n\n**Differences between Long Straddle and Strangle and Short Straddle and Strangle**\n\n\n\n|Col1|Long Straddle|Long Strangle|\n|---|---|---|\n|Construction|Purchase of a call and put with the<br>same expiry dates and same strike<br>prices|Purchase of a call and put with same<br>expiry date but with different strike<br>prices|\n\n\n113",
+        "chunk_id": "421"
+      },
+      "252": {
+        "title": "**4.3 Pay off Profiles of Options Contracts**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 4: COMMODITY OPTIONS**",
+          "**4.3 Pay off Profiles of Options Contracts**"
+        ],
+        "content": "The risk and reward in option contracts is summarized through the table below:\n\n|Position|Maximum Risk|Maximum Reward|\n|---|---|---|\n|Long Call|Limited to Premium|Unlimited|\n|Short Call|Unlimited|Limited to Premium|\n|Long Put|Limited to Premium|Strike price less premium|\n|Short Put|Strike price less premium|Limited to premium|\n\n\n\nOption strategies result in nonlinear pay offs (that is not a straight line, but either curve or a\nline with a sharp bend) because of the optionality of options, which is the right without\nobligation for the buyer. The buyer of option has limited downside and unlimited upside,\nwhile seller has limited upside and unlimited downside. This is unlike returns from a futures\ncontract or returns from a position in spot market which are linear and are same for both\nbuyer and seller.",
+        "chunk_id": "252"
+      },    
+}
+
+
+// Question: 4
+// What are the three settlement options currently available in the commodity futures market for an open position at expiry?
+// Miss Type: Clear Miss
+// Real Answer:
+{
+    "539": {
+        "title": "**7.3 Delivery Process**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 7: CLEARING, SETTLEMENT AND RISK MANAGEMENT**",
+          "**7.3 Delivery Process**"
+        ],
+        "content": "In the commodity futures market, at present three settlement options are available to the\nbuyer/seller: compulsory delivery, both options and cash settlement.\n\n\nThe process of physical delivery of compulsorily delivered contract is as described below:\n\n\nAssumption No. (1): Seller has deposited the quality certified goods in the warehouse and\nreceived the warehouse receipt before the initiation of step 1.\n\n\nAssumption No. (2): Buyer has transferred the money to the clearing member equivalent to\nthat of the value of goods to be taken delivery by him calculated using the Final Settlement\nRate/Due Date Rate. This is also taken care by stepping up delivery margin on buyers once\nthe tender/delivery period starts in order to avoid sudden shock on exchange and on buyer.\n\n\nStep 1: Trading Member Q will transfer the quality certificate and warehouse receipt for client\nY's goods to clearing member B.",
+        "chunk_id": "539"
+      },
+    
+}
+
+// Retreived Answer:
+{
+    "305": {
+        "title": "**4.6 Options on Goods**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 4: COMMODITY OPTIONS**",
+          "**4.6 Options on Goods**"
+        ],
+        "content": "Commodity Futures were implemented in FY2017-18 as Futures markets were very much\nunder the commodity trading platform of exchanges (i.e., traded on exchanges such as\nNCDEX, MCX, etc.). Commodity Futures were already on Direct Commodity, many of which\nhad compulsory delivery rather than cash settlement. Hence, over the time, it is felt that\nOptions can also be traded in such a way that its expiry results in delivery as is the case with",
+        "chunk_id": "305"
+      },
+      "644": {
+        "title": "**7.12 Additional Procedures for Other Commodity Products**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 7: CLEARING, SETTLEMENT AND RISK MANAGEMENT**",
+          "**7.12 Additional Procedures for Other Commodity Products**"
+        ],
+        "content": "- Long put position and short call positions in exercised options shall devolve into sell\nposition in the underlying goods requiring delivery to be made.\n\n\nAll such devolved delivery and payment obligations are merged with the delivery and\npayment obligations of normal Commodity Futures trading segment within the same\nExchange. Post the devolution, the net position of delivery and payment is derived. As the\noptions position-based delivery obligations merges with that of delivery obligations from\nFuture positions, additional procedures for final settlement start as explained below:\n\n\nIn a commodity trading segment of the exchange, Futures and Options on Goods for the same\ncommodity, both expire on the same date. For example, for RM Seed and other contracts in\nNCDEX, Futures and Options on goods both expire on the 20 <sup>th</sup> of the expiry month. Co-existing\nand co-expiring schedule of options on goods and options on related futures contracts\nfacilitates the following:",
+        "chunk_id": "644"
+      },
+      "293": {
+        "title": "**4.5 Options on Commodity Futures**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 4: COMMODITY OPTIONS**",
+          "**4.5 Options on Commodity Futures**"
+        ],
+        "content": "Till 2019, the commodity option contracts trade was all in fact ‘Options on Commodity\nFutures’. Subsequently, the products relating to Option on Goods were introduced across\nexchanges in 2020. In the case of Options on Futures, devolvement into Futures (i.e., expiry\nof Option) happens generally before the day when delivery period and staggered margin\nperiod on Futures starts. These margins in Futures generally start 5-15 calendar days before\nexpiry of Futures. Thus, if Futures’ pre-delivery margin period starts 10 days before expiry of\nFutures (say, E-10 day), relevant Option contract devolves on Futures around 13 days before\nexpiry of Futures (i.e., around E-13 days).",
+        "chunk_id": "293"
+      },
+      "204": {
+        "title": "**3.7 Commodity Futures and Commodity Forwards**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 3: COMMODITY FUTURES**",
+          "**3.7 Commodity Futures and Commodity Forwards**"
+        ],
+        "content": "- a specified quantity of a commodity:\n\n\n- of a specified quality\n\n\n- on a specified date\n\n\n- at a specific price\n\n\n- at the specified place.\n\n\nFutures contracts on currency rates (currency futures), interest rates (bond futures) and\nequity prices (stock or equity index futures) are known as financial futures, as distinct from\ncommodity futures (futures on crude oil, metals, agriculture products, etc.). Futures are\nbought and sold only through the authorized members of the exchange. A distinct feature of\nfutures is that the contracts are marked to market daily, and the members must pay/receive\nmargin equivalent to that day’s loss/gain, if any. This way, the possibility of default on the\nsettlement date is significantly reduced. Also, the exchange guarantees all trades routed\nthrough its members, even in case of default, insolvency, or non-performance of any client or\nmember.",
+        "chunk_id": "204"
+      },
+      "337": {
+        "title": "**4.6 Options on Goods**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 4: COMMODITY OPTIONS**",
+          "**4.6 Options on Goods**"
+        ],
+        "content": "Commodity Options vary from Equity options segment in various ways. Key differences\nbetween these two segments are given as below:\n\n\n\n\n\n\n\n|Commodity Options|Equity Options|\n|---|---|\n|_Options on Futures - if exercised Settled in futures_<br>_Contracts_|_Options on stocks - if exercised settle in_<br>_physical Delivery_|\n|_Options on Goods - if exercised Settles in physical_<br>_Delivery_|_Options on Index - if exercised settled in cash_|\n|_Monthly expiries_|_Daily, Weekly and Monthly expiries_|\n|_Last day of expiry 3 days prior to futures tender_<br>_Period_|_Settlement on last day of expiry_|\n|_Popular options: Individual scrips like Crude oil,_<br>_Gold, Natural Gas etc._|_Popular options: Index options like Nifty,_<br>_BankNifty, Sensex etc._|\n|_Market timings: 9 am to 11:30pm/11:55pm_|_Market timings: 9:15 am to 3:30 pm_|\n|_Volatility: High_|_Volatility: Moderate to High_|\n\n\n89",
+        "chunk_id": "337"
+      },
+         
+}
+
+// Question: 5
+// Through which online grievance redressal mechanism can an investor lodge and track a complaint against a broker even without seeking monetary compensation?
+// Miss Type: Near Topic Retrieval
+// Real Answer:
+{
+    "774": {
+        "title": "**10.4 Rights and Obligations of Members and Clients**",
+        "breadcrumb": [
+          "",
+          "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+          "**10.4 Rights and Obligations of Members and Clients**"
+        ],
+        "content": "**Rights of client/investor:**\n\n- Access to Investor Grievance Redressal Mechanism of member, stock exchange and\nthrough SCORES /SMART ODR window of SEBI to get the resolution for his/her complaints.\n\n- The client has a right to make a complaint even if there is no monetary compensation he\nis seeking. He can make complaints about servicing\\operational issues as well.\n\n- To receive contract notes, account ledger/statement and other margin and position\nrelated reports.",
+        "chunk_id": "774"
+      },
+}
+
+// Retreived Answer:
+{
+ "750": {
+    "title": "**10.3 Investors Grievance Redressal Mechanism**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+      "**10.3 Investors Grievance Redressal Mechanism**"
+    ],
+    "content": "Investor Grievance Redressal Mechanism / Investor Service Department is a very important\ndepartment and is considered as a key regulatory function of SEBI in terms of monitoring\nexchanges under SECC Regulation 2012. Further, having a proper mechanism of investor\ngrievance redressal is a must and is an ongoing condition for eligibility of membership of the\nExchange under <mark>Brokers Regulation2026</mark> .\n\n\nInvestors can approach the Investors Grievance Division (IGD) of the exchange for redressal\nof their grievances. The Exchange has a mechanism of resolving disputes by coordinating with\nthe member and the complainant. Exchanges generally entertain complaints against trading\nmembers in respect of the following:\n\n\n1. Non-receipt of documents such as member-client agreement, contract notes, settlement\nof accounts, order trade log, etc.\n2. Non-refund of margin money\n\n\n197",
+    "chunk_id": "750"
+  },
+  "753": {
+    "title": "**10.3 Investors Grievance Redressal Mechanism**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+      "**10.3 Investors Grievance Redressal Mechanism**"
+    ],
+    "content": "The investor should first approach the concerned exchange/intermediary against whom there\nis a complaint. If the response received is not satisfactory, then investors can approach SEBI\nthrough SCORES. SEBI Complaints Redress System (SCORES) is a web based centralized\ngrievance redress system of SEBI. Complaints can be made online and acknowledgement is\ngenerated instantaneously acknowledging the receipt of complaint and allotting a unique\ncomplaint registration number to the complainant for future reference and tracking. The\ncomplaint is forwarded online to the entity concerned for its redressal and the entity\nconcerned should upload an Action Taken Report (ATR) on the complaint. The entity must\nresolve the complaint within 21 days after receiving intimation from SEBI under SCORE.\n\n\n**Online Dispute Resolution in the Indian Securities Market: Leveraging the Digital**\n**Transformation**",
+    "chunk_id": "753"
+  },   
+  "760": {
+    "title": "**10.3 Investors Grievance Redressal Mechanism**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+      "**10.3 Investors Grievance Redressal Mechanism**"
+    ],
+    "content": "**7. Ethical Violations**\n\n\n  - **Insider trading allegations**   - Complaints regarding the misuse of undisclosed, material\ninformation for trading.\n\n  - **Market manipulation**   - Actions a market participant takes to deceive or mislead other\ninvestors by manipulating the price or availability of securities.\n\n\n**Process for Addressing Grievances**\n\n\n1. **Filing the Complaint:** Investors initiate the process by filing a complaint through the\nODR portal, detailing the nature of their grievance against a market participant.\n2. **Conciliation:** An attempt is made to resolve the dispute through conciliation, a less\nformal method where a conciliator helps the parties reach a mutual agreement.\n3. **Arbitration:** If conciliation fails or is deemed inappropriate, the matter may be\nescalated to arbitration, where an arbitrator (or panel of arbitrators) reviews the\nevidence and issues a binding decision.",
+    "chunk_id": "760"
+  },
+  "762": {
+    "title": "**10.3 Investors Grievance Redressal Mechanism**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+      "**10.3 Investors Grievance Redressal Mechanism**"
+    ],
+    "content": "**How the ODR Portal Works: A Step-by-Step Guide**\n\n\nAn investor/client shall first take up the grievance with the Market Participant by lodging a\ncomplaint directly with the concerned Market Participant.\n\n\n1. If the grievance is not redressed satisfactorily, the investor/client may, escalate the\ngrievance through the SCORES Portal in accordance with the process laid out therein.\nThe Online Dispute Resolution (ODR) Portal has connectivity with the SEBI SCORES\nportal / SEBI Intermediary portal.\n2. if the investor/client is still not satisfied with the outcome, the grievance can be taken\nup through the ODR Portal by initiating dispute resolution.",
+    "chunk_id": "762"
+  },
+  "756": {
+    "title": "**10.3 Investors Grievance Redressal Mechanism**",
+    "breadcrumb": [
+      "",
+      "**CHAPTER 10: CODE OF CONDUCT AND INVESTOR PROTECTION MEASURES**",
+      "**10.3 Investors Grievance Redressal Mechanism**"
+    ],
+    "content": "The ODR Platform is the go-to solution for various grievances investors might encounter.\nWhether it's a service-related complaint, a trade discrepancy, or an issue related to noncompliance with the regulatory frameworks by market participants, this platform has got all\nsuch grievances of the investors covered, to be resolved. The resolution process is\ncomprehensive, starting from the initial grievance filing and potentially leading to arbitration\nif initial conciliation efforts fail.\n\n\nHere’s a detailed look at the types of grievances that the ODR platform addresses:\n\n\n**1. Service-Related Complaints**\n\n\nThese complaints encompass a variety of issues that clients might encounter with the services\nprovided by market participants. Examples include:\n\n\n  - **Non-receipt or delay of account statements**   - Where clients do not receive their\naccount statements or receive them later than expected.",
+    "chunk_id": "756"
+  },
+}

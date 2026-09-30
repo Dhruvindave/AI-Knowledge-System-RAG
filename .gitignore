@@ -9,3 +9,5 @@ __pycache__/
 
 faiss.index
 metadata.pkl
+
+.agents/

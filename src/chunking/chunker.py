@@ -1,10 +1,10 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
+from src.config.config import CHUNK_SIZE, CHUNK_OVERLAP
 
 def text_splitter(text):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
         separators=[
             "\n\n",
             "\n",

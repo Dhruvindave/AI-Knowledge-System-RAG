@@ -4,7 +4,7 @@ import random
 import traceback
 from google import genai
 from google.genai import errors
-
+from src.config.config import GEMINI_API_KEY, GEMINI_MODEL, GEMINI_FALLBACK_MODELS, MAX_LLM_RETRIES
 
 class GeminiServiceError(Exception):
     """
@@ -266,7 +266,7 @@ class LLMResponseGenerator:
         """
         Google Gemini GenAI configuration with environment variable support.
         """
-        default_key = 'AQ.Ab8RN6LdZl8pxdRhnCTAMsjCvQuzFv1CRJt3JGnqdkmhUR-GhQ'
+        default_key = GEMINI_API_KEY
         api_key = os.getenv("GEMINI_API_KEY", default_key)
         self.client = genai.Client(api_key=api_key)
 
@@ -299,9 +299,9 @@ Answer:"""
     def generate_response(
         self,
         prompt: str,
-        model: str = "gemini-2.5-flash",
-        fallback_models: tuple = ("gemini-2.0-flash", "gemini-1.5-flash"),
-        max_retries: int = 3,
+        model: str = GEMINI_MODEL,
+        fallback_models: tuple = GEMINI_FALLBACK_MODELS,
+        max_retries: int = MAX_LLM_RETRIES,
     ) -> GeneratedResponse:
         """
         Generates content from Gemini with:

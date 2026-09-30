@@ -1,12 +1,12 @@
 from sentence_transformers import SentenceTransformer
-
+from src.config.config import EMBEDDING_MODEL
 _MODEL = None
 
 
 def _embedding_model():
     global _MODEL
     if _MODEL is None:
-        _MODEL = SentenceTransformer("all-MiniLM-L6-v2")
+        _MODEL = SentenceTransformer(EMBEDDING_MODEL)
     return _MODEL
 
 

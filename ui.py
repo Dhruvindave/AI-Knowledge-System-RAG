@@ -18,7 +18,7 @@ from src.vector_store.vector_store import FaissVectorStore
 from src.generation.llm import LLMResponseGenerator, GeminiServiceError, parse_gemini_error
 from src.chunking.semantic_chunking import semantic_chunker
 from src.chunking.chunker import text_splitter
-
+from src.config.config import TOP_K_RESULTS
 import pymupdf
 import pymupdf4llm
 
@@ -30,7 +30,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-TOP_K = 5
+
 CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩"
 
 # Stages executed inside build_knowledge_base(). Shown as completed only
@@ -1628,7 +1628,7 @@ def answer_question(question: str) -> dict:
             question,
             st.session_state.vector_store,
             st.session_state.llm,
-            k=TOP_K,
+            k=TOP_K_RESULTS,
         )
         return {"role": "assistant", "content": answer, "sources": sources}
     except GeminiServiceError as gerr:

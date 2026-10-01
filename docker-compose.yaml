@@ -1,0 +1,25 @@
+
+services:
+
+  rag:
+    image: rag-v:0.0.1
+    container_name: rag_service
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data:/app/data
+
+    networks:
+      - rag_network
+
+    restart: unless-stopped
+
+
+networks:
+  rag_network:
+    driver: bridge

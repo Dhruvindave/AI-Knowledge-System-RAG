@@ -1,220 +1,123 @@
-# AI-Knowledge-System-RAG-
-A user uploads documents and asks questions. The system answers using the uploaded documents instead of general LLM knowledge.
+# DocuRAG — Document Question Answering with RAG
+
+A document-grounded question-answering system that lets users ask questions about uploaded PDFs and receive answers generated using retrieved document context.
+
+**[🚀 Try the Live Demo](https://tinyurl.com/4b248k9n)** · **[View Source Code](https://github.com/Dhruvindave/AI-Knowledge-System-RAG/)**
 
 ---
 
-## Objective
+## Overview
 
-Build a system where users upload a PDF and ask questions. The system answers using the uploaded document rather than relying only on the LLM's general knowledge.
+DocuRAG implements an end-to-end Retrieval-Augmented Generation (RAG) pipeline, covering document ingestion, structural processing, semantic chunking, embedding generation, vector retrieval, and LLM-based answer generation.
 
----
+The project also includes a retrieval evaluation pipeline to measure how effectively relevant document chunks are retrieved for a given question.
 
-## High Level Architecture
+## Key Features
 
-### Document Ingestion Pipeline
+* **Document processing:** Convert PDFs into Markdown while preserving document structure.
+* **Semantic chunking:** Split documents into meaningful chunks for retrieval.
+* **Vector search:** Generate embeddings and retrieve relevant chunks using FAISS.
+* **Context-grounded generation:** Use retrieved document context to generate answers with an LLM.
+* **Retrieval evaluation:** Benchmark retrieval performance using Hit Rate and Mean Reciprocal Rank (MRR).
+* **Interactive interface:** Upload documents and query their contents through a Streamlit application.
 
-User Upload PDF
+## Retrieval Evaluation
 
-↓
+Retrieval quality was evaluated using a benchmark dataset of 100 questions.
 
-PDF Text Extraction
+| Metric   | Top 1 | Top 3 | Top 5 | Top 10 |
+| -------- | ----: | ----: | ----: | -----: |
+| Hit Rate |  0.64 |  0.90 |  0.95 |   0.97 |
+| MRR      | 0.640 | 0.760 | 0.771 |  0.774 |
 
-↓
+**Key observations**
 
-Chunking
+* The correct relevant result appeared in the top 3 retrieved chunks for 90% of benchmark queries.
+* Top-5 retrieval achieved a 95% hit rate.
+* Increasing the retrieval depth to 10 raised the hit rate to 97%, with a smaller improvement in MRR.
 
-↓
+These results measure retrieval performance, not the factual accuracy of generated answers. Answer quality requires separate evaluation.
 
-Embedding Generation
+## Architecture
 
-↓
+### 1. Document Ingestion
 
-Store Embeddings in Vector Database
+PDF → Markdown conversion → Document structure processing → Semantic chunking → Embeddings → FAISS index
 
----
+### 2. Question Answering
 
-### Question Answering Pipeline
+User question → Query embedding → Similarity search → Relevant chunks → Context construction → LLM response → Answer displayed in the UI
 
-User Question
+## Technical Stack
 
-↓
+* **Language:** Python
+* **LLM orchestration:** LangChain
+* **Language model:** Google Gemini
+* **Document processing:** PyMuPDF4LLM
+* **Vector retrieval:** FAISS
+* **Interface:** Streamlit
+* **Deployment tooling:** Docker
 
-Question Embedding
+## Run Locally
 
-↓
+### Prerequisites
 
-Similarity Search in Vector Database
+* Python
+* Git
+* A Google Gemini API key
 
-↓
+### Setup
 
-Relevant Chunks Retrieved
+```bash
+git clone https://github.com/Dhruvindave/AI-Knowledge-System-RAG.git
+cd AI-Knowledge-System-RAG
 
-↓
+python -m venv .venv
+source .venv/bin/activate
 
-Context + User Question sent to LLM
+pip install -r requirements.txt
+```
 
-↓
+On Windows, activate the environment using:
 
-LLM Generates Final Response
+```powershell
+.venv\Scripts\Activate.ps1
+```
 
----
+Configure the Gemini API key using the environment variable or configuration mechanism expected by the application. Keep credentials out of source control.
 
-## Components
+Launch the Streamlit interface using the repository's configured entry point. If using the provided Docker configuration, follow the deployment settings in `Dockerfile` and `docker-compose.yaml`.
 
-### 1. PDF Processor
+## Project Structure
 
-Purpose:
+```text
+AI-Knowledge-System-RAG/
+├── src/                    # Core RAG implementation
+├── experiments/             # Experiments and evaluation work
+├── ui.py                    # Streamlit interface
+├── main.ipynb               # Development notebook
+├── requirements.txt         # Python dependencies
+├── Dockerfile               # Container configuration
+├── docker-compose.yaml      # Docker Compose configuration
+└── README.md
+```
 
-Extract text from uploaded PDF documents.
+## What This Project Demonstrates
 
-Input:
+* Building an end-to-end RAG pipeline beyond a basic LLM wrapper.
+* Designing document-processing and semantic chunking workflows.
+* Implementing vector-based retrieval with FAISS.
+* Evaluating retrieval effectiveness using a benchmark dataset.
+* Integrating LLM inference with a usable application interface.
 
-PDF File
+## Limitations
 
-Output:
+* Retrieval metrics do not independently establish answer correctness or citation accuracy.
+* Results depend on the document collection, chunking strategy, embeddings, and retrieval configuration.
+* Generated answers may still be incomplete or incorrect when retrieved context is insufficient.
 
-Raw Text
+## Try It
 
----
+**[Open DocuRAG](https://tinyurl.com/4b248k9n)** to explore document-based question answering.
 
-### 2. Chunking Module
-
-Purpose:
-
-Split large documents into smaller meaningful sections.
-
-Input:
-
-Raw Text
-
-Output:
-
-Text Chunks
-
-Reason:
-
-LLMs and embedding models work better on smaller sections.
-
----
-
-### 3. Embedding Module
-
-Purpose:
-
-Convert text chunks into numerical vectors.
-
-Input:
-
-Text Chunk
-
-Output:
-
-Embedding Vector
-
-Reason:
-
-Allows semantic search based on meaning rather than exact words.
-
----
-
-### 4. Vector Database
-
-Purpose:
-
-Store embeddings and their corresponding chunks.
-
-Input:
-
-Embedding Vectors
-
-Output:
-
-Relevant Chunks during retrieval
-
-Examples:
-
-ChromaDB
-
-FAISS
-
-Pinecone
-
-(Choose one during implementation)
-
----
-
-### 5. Retriever
-
-Purpose:
-
-Find document chunks most relevant to the user's question.
-
-Input:
-
-Question Embedding
-
-Output:
-
-Top Relevant Chunks
-
----
-
-### 6. LLM Module
-
-Purpose:
-
-Generate answers using retrieved context.
-
-Input:
-
-Retrieved Chunks + User Question
-
-Output:
-
-Final Answer
-
----
-
-## End-to-End Flow
-
-PDF Upload
-
-↓
-
-Extract Text
-
-↓
-
-Create Chunks
-
-↓
-
-Generate Embeddings
-
-↓
-
-Store in Vector Database
-
-↓
-
-User asks Question
-
-↓
-
-Generate Question Embedding
-
-↓
-
-Retrieve Relevant Chunks
-
-↓
-
-Send Context + Question to LLM
-
-↓
-
-Generate Answer
-
-↓
-
-Display Response
+**[Explore the code on GitHub](https://github.com/Dhruvindave/AI-Knowledge-System-RAG/)** to inspect the implementation.
